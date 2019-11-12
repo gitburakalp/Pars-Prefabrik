@@ -1,0 +1,10 @@
+a:not([href]) {
+  color: inherit;
+  cursor: pointer;
+}
+
+[role='button'] {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

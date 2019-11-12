@@ -1,0 +1,57 @@
+{
+  "name": "pars-prefabrik",
+  "version": "1.0.0",
+  "description": "Pars Prefabrik",
+  "main": "postcss.config.js",
+  "scripts": {
+    "webpack": "concurrently \"webpack-dev-server --watch\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitburakalp/Pars-Prefabrik.git"
+  },
+  "keywords": [
+    "ES6",
+    "HTML",
+    "JS",
+    "JAVASCRIPT",
+    "SCSS",
+    "SASS",
+    "WEBPACK"
+  ],
+  "author": "Burak Alp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitburakalp/Pars-Prefabrik/issues"
+  },
+  "homepage": "https://github.com/gitburakalp/Pars-Prefabrik#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^5.0.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "gsap": "^2.1.3",
+    "html-minifier-webpack-plugin": "^2.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.3",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

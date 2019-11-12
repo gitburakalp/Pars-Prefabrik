@@ -1,0 +1,10 @@
+@mixin makeKeyframe($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

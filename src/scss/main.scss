@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap');
+
+@import 'abstracts/override-variables';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'vendors/font-awesome/light';
+
+//Abstracts
+@import 'abstracts/index';
+
+//Base Properties
+@import 'base/index';
+
+//Layout
+@import 'layout/index';
+
+//Components or Modules
+@import 'components/index';
