@@ -1,0 +1,35 @@
+.backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity $duration ease-in,
+    transform 150ms ease-in;
+  will-change: opacity, transform;
+
+  @include media-breakpoint-down(sm) {
+    position: relative;
+  }
+
+  &.active {
+    opacity: 1;
+    .image {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-black, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 3;
+  }
+}

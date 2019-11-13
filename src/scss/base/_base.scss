@@ -1,6 +1,45 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  overflow: hidden;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'smcp' 1, 'onum' 1, 'frac' 1,
+    'kern' 1, 'liga' 1, 'dlig' 1, 'swsh' 1;
+  font-feature-settings: normal;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  font-family: '#', Helvetica, Arial, sans-serif;
+  color: $color-white;
+  background-color: $color-black;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
 a:not([href]) {
   color: inherit;
   cursor: pointer;
+}
+
+@for $i from 1 to 7 {
+  h#{$i} {
+    margin-bottom: 0;
+  }
+}
+
+p,
+figure {
+  margin-bottom: 0;
 }
 
 [role='button'] {
@@ -8,3 +47,21 @@ a:not([href]) {
   box-shadow: none;
   border: none;
 }
+
+@include font-face(
+  'MillerDisplay-LightRegular',
+  'normal',
+  'millerdisplay-light-webfont.woff2'
+);
+
+@include font-face(
+  'MillerDisplay-RomanRegular',
+  'normal',
+  'millerdisplay-roman-webfont.woff2'
+);
+
+@include font-face(
+  'GillSans-MediumRegular',
+  'normal',
+  'gillsans-medium-webfont.woff2'
+);

@@ -13,7 +13,7 @@ const CONFIG = {
   output: {
     path: DIST_DIR,
     filename: 'js/main.js',
-    publicPath: '/',
+    publicPath: '',
     crossOriginLoading: 'use-credentials',
   },
   module: {
@@ -35,16 +35,25 @@ const CONFIG = {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         loader:
           'file-loader?prefix=font/&name=fonts/[name].[ext]',
+        options: {
+          publicPath: '../',
+        },
       },
       {
         test: /\.(woff|woff2)$/,
         loader:
           'url-loader?prefix=font/&limit=5000&name=fonts/[name].[ext]',
+        options: {
+          publicPath: '../',
+        },
       },
       {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
         loader:
           'url-loader?limit=10000&mimetype=application/octet-stream&name=fonts/[name].[ext]',
+        options: {
+          publicPath: '../',
+        },
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -61,6 +70,9 @@ const CONFIG = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader:
           'url-loader?limit=10000&name=fonts/[name].[ext]',
+        options: {
+          publicPath: '../',
+        },
       },
       {
         test: /\.png(\?v=\d+\.\d+\.\d+)?$/,

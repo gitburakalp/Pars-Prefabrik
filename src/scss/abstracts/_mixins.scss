@@ -8,3 +8,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin font-face($fontFamily, $fontWeight, $fontSource) {
+  @font-face {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    src: url($fa-font-path+'/'+$fontSource);
+  }
+}

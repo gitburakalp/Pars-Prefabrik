@@ -1,0 +1,70 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  &-nav {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      max-width: 85%;
+      @include mx-auto;
+      margin-top: vw(50, 1920);
+    }
+  }
+
+  &-link {
+    display: inline-block;
+    max-width: vw(180, 1920);
+
+    + * {
+      margin-left: 3rem;
+    }
+  }
+
+  &-logo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  &-menu {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      font-family: $ff-gillsans-medium;
+      font-size: 11px;
+      letter-spacing: 1px;
+      transition: color $duration ease;
+      will-change: color;
+
+      &:hover {
+        color: $color-dull-brown;
+      }
+
+      &.active {
+        color: $color-dull-brown;
+      }
+
+      @include media-breakpoint-up(md) {
+        + * {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
